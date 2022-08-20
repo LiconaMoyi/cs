@@ -1,5 +1,3 @@
- 
-
 ### Linux Shell Scripting CookBook
 
 #### Chapter 1
@@ -106,4 +104,20 @@ echo ${#array_var}
  DEBUG echo "I is $i"
  done
 ```
+
+###### 17.expect
+
+```shell
+spawn               交互程序开始后面跟命令或者指定程序
+expect              获取匹配信息匹配成功则执行expect后面的程序动作
+send exp_send       用于发送指定的字符串信息
+exp_continue        在expect中多次匹配就需要用到
+send_user           用来打印输出 相当于shell中的echo
+exit                退出expect脚本
+eof                 expect执行结束 退出
+set                 定义变量
+puts                输出变量
+set timeout         设置超时时间
+```
+
 
